@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflio</title>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!--nav bar-->
+    <header class="active">
+        <a href="#" class="logo">Ace</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i> 
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!--bars background-->
+<div class="bars-box active">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+</div>
+
+
+    <!--Services Section-->
+<section class="services active">
+    <h2 class="heading">My <span>Services</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <div class="icon">
+                <i class='bx bx-code-alt'></i> 
+                <a href="#"><i class='bx bx-left-arrow-alt'></i></a>
+            </div>
+            <h3>Front-End Development</h3>
+            <p>I create modern, responsive websites using HTML, CSS, and JavaScript — optimized for mobile and clean user experiences.</p>
+        </div>
+
+         <div class="services-box">
+            <div class="icon">
+                <i class='bx bx-brush'></i>  
+                <a href="#"><i class='bx bx-left-arrow-alt'></i></a>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>I design clean, user-friendly layouts with a focus on usability, visual hierarchy, and mobile-first design.</p>
+        </div>
+
+            <div class="services-box">
+            <div class="icon">
+            <i class='bx bx-wrench'></i>
+            <a href="#"><i class='bx bx-left-arrow-alt'></i></a>
+            </div>
+            <h3>Website Maintenance & Updates</h3>
+            <p>I update existing websites, fix layout issues, and make sure everything works smoothly across devices. (lies)</p>
+        </div>
+
+            <div class="services-box">
+            <div class="icon">
+            <i class='bx bx-globe'></i> 
+            <a href="#"><i class='bx bx-left-arrow-alt'></i></a>
+            </div>
+            <h3>Landing Pages & Personal Sites</h3>
+            <p>I build high-converting landing pages and personal portfolios tailored to your brand or goals.</p>
+        </div>
+
+            <div class="services-box">
+            <div class="icon">
+            <i class='bx bxs-file-doc'></i>   
+            <a href="#"><i class='bx bx-left-arrow-alt'></i></a>
+            </div>
+            <h3>Microsoft Office Document Design</h3>
+            <p>I design professional documents, presentations, and spreadsheets using Word, PowerPoint, and Excel.</p>
+        </div>
+
+            <div class="services-box">
+            <div class="icon">
+            <i class='bx bx-cloud-upload'></i>    
+            <a href="#"><i class='bx bx-left-arrow-alt'></i></a>
+            </div>
+            <h3>Git & Deployment Help</h3>
+            <p>I set up GitHub repositories, push code changes, and deploy static sites to platforms like Netlify or Vercel.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!--custom js-->
+<script src="js/script.js"></script>
+<script>const menuIcon = document.getElementById('menu-icon');
+const nav = document.querySelector('header nav');
+
+menuIcon.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});</script>
+</body>
+</html>

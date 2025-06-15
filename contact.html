@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflio</title>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--nav bar-->
+    <header class="active">
+        <a href="#" class="logo">Ace</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i> 
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!--bars background-->
+<div class="bars-box active">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+</div>
+
+
+<!--contact section-->
+<section class="contact active">
+    <div class="contact-container">
+        <div class="contact-box">
+            <h3>Let's Work Together</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis cupiditate maiores quibusdam ex quas aspernatur ducimus est assumenda nesciunt!</p>
+            <div class="contact-detail">
+                <i class='bx bx-phone'></i>
+                <div class="detail">
+                    <p>Phone</p>
+                    <p>(+27) 069 955 026</p>
+                </div>
+            </div>
+
+            <div class="contact-detail">
+                <i class='bx bx-envelope'></i>
+                <div class="detail">
+                    <p>Email</p>
+                    <p>aceym18@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-detail">
+                <i class='bx bx-map-pin'></i>
+                <div class="detail">
+                    <p>Address</p>
+                    <p>19 LaLa Land, Smallville</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="contact-box">
+            <form action="">
+                <h2 class="heading">Contact <span>Me!</span></h2>
+                <div class="field-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Email Subject" required>
+                    <textarea name="" id="" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--custom js-->
+<script src="js/script.js"></script>
+<script>const menuIcon = document.getElementById('menu-icon');
+const nav = document.querySelector('header nav');
+
+menuIcon.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});</script>
+</body>
+</html>
